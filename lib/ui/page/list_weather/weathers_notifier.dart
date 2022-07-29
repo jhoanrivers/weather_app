@@ -1,0 +1,41 @@
+
+
+
+import 'package:flutter/material.dart';
+import 'package:weather_app/locator.dart';
+import 'package:weather_app/network/model/weather.dart';
+import 'package:weather_app/network/repository/irepository.dart';
+import 'package:weather_app/network/repository/repository.dart';
+
+import '../../../network/model/list_element.dart';
+
+class WeathersNotifier extends ChangeNotifier {
+
+  var num = 0;
+  bool loading = true;
+  List<ListElement> listElement = const <ListElement>[];
+  var lat = "-6.175115064391812";
+  var lon = "106.82708842419382";
+
+  Future<void> getWeatherByLatLong () async{
+    Weather weather = await getIt.get<Repository>().getWeatherByLatLong(lat, lon);
+    loading = false;
+    listElement = weather.list!;
+    notifyListeners();
+  }
+
+  doIncrement(){
+    num++;
+    print(num);
+    notifyListeners();
+  }
+
+  doDecrement(){
+    num--;
+    print(num);
+    notifyListeners();
+  }
+
+
+
+}

@@ -1,9 +1,11 @@
 
-import 'package:weather_app/network/model/weather.dart';
+
+import '../model/weather.dart';
 
 abstract class IApiClient {
 
-  Future<List<Weather>> getWeathers();
+  Future<Weather> getWeatherByLatLong(String latitude, String longitude);
 
+  Future<Weather> getWeatherBy(String cityName);
 
 }
