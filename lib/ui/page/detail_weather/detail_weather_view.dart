@@ -96,7 +96,6 @@ class _DetailWeatherViewState extends State<DetailWeatherView> {
                             Text("${(detail.element.main!.tempMax - 273.15).toStringAsFixed(2)}°C",style: BaseStyle.ts14Bold())
                           ],
                         ),
-
                       ],
                     )
                   ],

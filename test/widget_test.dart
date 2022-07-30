@@ -9,22 +9,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:weather_app/main.dart';
+import 'package:weather_app/network/model/weather.dart';
+
+import 'api_client_test.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+  ApiClientTest apiClientTest= ApiClientTest();
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  group("Get Weather test", () {
+    test("return weather if load is successful", () async {
+      Weather weather = await apiClientTest.getWeatherByLatLong("123", "353");
+      expect(weather.cod,'200');
+    });
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
   });
+
+
+
 }
