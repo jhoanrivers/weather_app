@@ -4,7 +4,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/locator.dart';
 import 'package:weather_app/network/model/weather.dart';
-import 'package:weather_app/network/repository/irepository.dart';
 import 'package:weather_app/network/repository/repository.dart';
 
 import '../../../network/model/city.dart';
@@ -26,19 +25,6 @@ class WeathersNotifier extends ChangeNotifier {
     loading = false;
     notifyListeners();
   }
-
-  doIncrement(){
-    num++;
-    print(num);
-    notifyListeners();
-  }
-
-  doDecrement(){
-    num--;
-    print(num);
-    notifyListeners();
-  }
-
 
 
 }

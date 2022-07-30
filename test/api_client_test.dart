@@ -1,11 +1,6 @@
 
 
 
-import 'dart:convert';
-
-import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:http/testing.dart';
 import 'package:weather_app/network/client/iapi_client.dart';
 import 'package:weather_app/network/model/weather.dart';
 

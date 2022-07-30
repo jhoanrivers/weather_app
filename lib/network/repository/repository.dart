@@ -1,6 +1,5 @@
 
 import 'package:weather_app/locator.dart';
-import 'package:weather_app/network/client/iapi_client.dart';
 import 'package:weather_app/network/model/weather.dart';
 import 'package:weather_app/network/repository/irepository.dart';
 

@@ -5,8 +5,6 @@ import 'package:weather_app/ui/page/list_weather/empty_view.dart';
 import 'package:weather_app/ui/page/list_weather/weather_item.dart';
 import 'package:weather_app/ui/page/list_weather/weathers_notifier.dart';
 
-import '../../../util/constant.dart';
-
 class WeathersView extends StatefulWidget {
   const WeathersView({Key? key}) : super(key: key);
 

@@ -1,6 +1,4 @@
-import 'package:weather_app/network/model/weather.dart';
 
-import 'enum_description.dart';
 
 class WeatherElement {
   WeatherElement({

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/locator.dart';
 import 'package:weather_app/ui/page/detail_weather/detail_weather_notifier.dart';
-import 'package:weather_app/ui/page/detail_weather/detail_weather_view.dart';
 import 'package:weather_app/ui/page/list_weather/weathers_notifier.dart';
 import 'package:weather_app/ui/page/list_weather/weathers_view.dart';
 

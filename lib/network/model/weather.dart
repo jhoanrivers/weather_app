@@ -5,7 +5,6 @@
 import 'dart:convert';
 
 import 'city.dart';
-import 'enum_description.dart';
 import 'enum_pod.dart';
 import 'enum_values.dart';
 import 'list_element.dart';
