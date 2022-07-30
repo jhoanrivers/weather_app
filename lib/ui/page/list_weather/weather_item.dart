@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/network/model/list_element.dart';
 import 'package:weather_app/util/base_sized.dart';
 import 'package:weather_app/util/base_style.dart';
+import 'package:weather_app/util/util_service.dart';
 
 class WeatherItem extends StatelessWidget {
 
@@ -31,13 +32,12 @@ class WeatherItem extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(element.dtTxt
-                  .toString(),
+              Text(UtilService.convertDateTimetoString(element.dtTxt!),
               style: BaseStyle.ts14Bold(),),
               BaseSized.h6(),
               Text(element.weather![0].main),
               BaseSized.h6(),
-              Text((element.main!.temp - 273.15).toString())
+              Text("${(element.main!.temp - 273.15).toStringAsFixed(2)}°C")
             ],
           )
         ],

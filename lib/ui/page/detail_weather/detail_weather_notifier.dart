@@ -8,9 +8,8 @@ class DetailWeatherNotifier extends ChangeNotifier {
   late ListElement element;
 
 
-  initElement(ListElement element){
+  Future<void> initElement(ListElement element) async {
     this.element = element;
-    notifyListeners();
   }
 
 }

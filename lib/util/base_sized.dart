@@ -11,4 +11,13 @@ class BaseSized {
     height: 6,
   );
 
+  static SizedBox h12() => SizedBox(
+    height: 12,
+  );
+
+  static h24()  =>  SizedBox(
+    height: 24,
+  );
+
+
 }

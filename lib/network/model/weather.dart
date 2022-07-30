@@ -53,11 +53,3 @@ class Weather {
 }
 
 final podValues = EnumValues({"d": Pod.D, "n": Pod.N});
-
-final descriptionValues = EnumValues({
-  "broken clouds": Description.BROKEN_CLOUDS,
-  "few clouds": Description.FEW_CLOUDS,
-  "light rain": Description.LIGHT_RAIN,
-  "overcast clouds": Description.OVERCAST_CLOUDS,
-  "scattered clouds": Description.SCATTERED_CLOUDS
-});

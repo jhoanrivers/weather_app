@@ -9,6 +9,7 @@ import 'package:weather_app/network/model/wind.dart';
 import 'clouds.dart';
 
 class ListElement {
+
   ListElement({
     required this.dt,
     required this.main,
